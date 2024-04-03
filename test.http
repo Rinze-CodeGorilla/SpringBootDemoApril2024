@@ -1,0 +1,41 @@
+### Create a first student
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "name": "Jan",
+  "startDate": "2024-01-01"
+}
+
+### Create a second student
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "name": "Piet",
+  "startDate": "2024-01-01"
+}
+
+### Alter the second student
+PATCH http://localhost:8080/students/2
+Content-Type: application/json
+
+{
+  "name": "Kees"
+}
+
+
+### list all students
+GET http://localhost:8080/students
+
+### list names to showcase StudentName record
+GET http://localhost:8080/studentnames
+
+### show hallo
+GET http://localhost:8080/hallo
+
+### show template
+GET http://localhost:8080/template
+
+### show template with parameter
+GET http://localhost:8080/template?name=Rinze
